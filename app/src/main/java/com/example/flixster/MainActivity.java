@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
                     movieAdapter.notifyDataSetChanged();
                     Log.i(TAG,"Movies: " + movies.size());
 
-
                 } catch (JSONException e) {
                     Log.e(TAG,"Hit json exception",e);
                     e.printStackTrace();
@@ -72,5 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 }
