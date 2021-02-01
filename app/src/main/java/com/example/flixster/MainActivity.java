@@ -12,7 +12,6 @@ import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.example.flixster.adapters.MovieAdapter;
 import com.example.flixster.models.Movie;
-import com.facebook.stetho.common.ArrayListAccumulator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Headers;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Create the adapter
         MovieAdapter movieAdapter = new MovieAdapter(this, movies);
+        ImageView img = findViewById(R.id.ivPoster) ;
 
         //Set the adapter on the recycler view
         rvMovies.setAdapter(movieAdapter);
